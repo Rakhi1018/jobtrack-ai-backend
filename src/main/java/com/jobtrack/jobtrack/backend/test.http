@@ -1,0 +1,50 @@
+### Create Job
+POST http://localhost:8080/api/jobs
+Content-Type: application/json
+
+{
+  "company": "TCS",
+  "role": "Java Developer",
+  "location": "Bengaluru",
+  "status": "Applied",
+  "jobUrl": "https://www.tcs.com/careers"
+}
+
+### Get All Jobs
+GET http://localhost:8080/api/jobs
+
+### Update Job
+PUT http://localhost:8080/api/jobs/1
+Content-Type: application/json
+
+{
+  "company": "TCS",
+  "role": "Senior Java Developer",
+  "location": "Hyderabad",
+  "status": "Interview",
+  "jobUrl": "https://www.tcs.com/careers"
+}
+
+### Delete Job
+DELETE http://localhost:8080/api/jobs/1
+
+### Create Complete Job Application
+POST http://localhost:8080/api/jobs
+Content-Type: application/json
+
+{
+  "company": "Deloitte",
+  "role": "Associate Software Engineer",
+  "location": "Bengaluru",
+  "jobType": "Full-time",
+  "appliedDate": "2026-09-09",
+  "status": "Applied",
+  "salary": "7.5 LPA",
+  "jobUrl": "https://www.deloitte.com/careers",
+  "recruiterName": "Pooja Hegde",
+  "recruiterEmail": "pooja@example.com",
+  "notes": "Prepare Java, Spring Boot, SQL and DSA",
+  "jobDescription": "Looking for an Associate Software Engineer with Java, Spring Boot, SQL and REST API skills.",
+  "atsMatch": 82
+}
+
